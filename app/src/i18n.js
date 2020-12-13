@@ -7,14 +7,21 @@ import es from './translations/es'
 
 const locizeProductId = process.env['REACT_APP_LOCIZE_PRODUCT_ID']
 
-const resources = locizeProductId ? undefined : { en, es }
+// const resources = locizeProductId ? undefined : { en, es }
 
-const i18nSetup = locizeProductId
-  ? i18n
-    .use(LanguageDetector)
-    .use(initReactI18next) // passes i18n down to react-i18next
-    .use(Locize)
-  : i18n
+// const i18nSetup = locizeProductId
+//   ? i18n
+//     .use(LanguageDetector)
+//     .use(initReactI18next) // passes i18n down to react-i18next
+//     .use(Locize)
+//   : i18n
+//     .use(LanguageDetector)
+//     .use(initReactI18next) // passes i18n down to react-i18next
+
+const resources = { en, es }
+
+const i18nSetup =
+  i18n
     .use(LanguageDetector)
     .use(initReactI18next) // passes i18n down to react-i18next
 

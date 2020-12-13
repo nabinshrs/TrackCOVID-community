@@ -61,22 +61,22 @@ class App extends React.Component {
       this.updateStatus()
       setInterval(this.updateStatus.bind(this), pollingTime)
     })
-    if (isUsingLocize) {
-      i18n.services.backendConnector.backend.getLanguages((err, data) => {
-        if (err) {
-          console.error(err)
-        } else {
-          const languages = Object.keys(data).map(languageCode => {
-            return {
-              code: languageCode,
-              name: languageNames[languageCode] || data[languageCode].name
-            }
-          })
-          const currentLanguage = i18n.language
-          this.setState({ languages, currentLanguage })
-        }
-      })
-    } else {
+    // if (isUsingLocize) {
+    //   i18n.services.backendConnector.backend.getLanguages((err, data) => {
+    //     if (err) {
+    //       console.error(err)
+    //     } else {
+    //       const languages = Object.keys(data).map(languageCode => {
+    //         return {
+    //           code: languageCode,
+    //           name: languageNames[languageCode] || data[languageCode].name
+    //         }
+    //       })
+    //       const currentLanguage = i18n.language
+    //       this.setState({ languages, currentLanguage })
+    //     }
+    //   })
+    // } else {
       const languages = [
         {
           code: 'en',
@@ -88,7 +88,7 @@ class App extends React.Component {
         }
       ]
       this.setState({ languages, currentLanguage: i18n.language })
-    }
+    // }
   }
 
   async checkUrl () {

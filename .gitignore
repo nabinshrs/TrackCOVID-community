@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+commands
+
+node_modules
+
+.env
+
+build

@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Exposures component: exposed 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container"
+>
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+  >
+    <img
+      src="stay-home.png"
+      style={
+        Object {
+          "marginTop": 20,
+          "maxWidth": "80px",
+        }
+      }
+      width={200}
+    />
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+      style={
+        Object {
+          "marginTop": 25,
+        }
+      }
+    >
+      Your risk level
+      : 
+      <span
+        style={
+          Object {
+            "color": "#f44336",
+          }
+        }
+      >
+        elevated
+      </span>
+    </p>
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+      style={
+        Object {
+          "marginTop": 15,
+        }
+      }
+    >
+      You may have been exposed to COVID-19. You should take precautionary measures to protect yourself and others, according to the guidance of public health authorities.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Exposures component: not exposed 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container"
+>
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+  >
+    <img
+      src="keep-distance.png"
+      style={
+        Object {
+          "marginTop": 20,
+          "maxWidth": "80px",
+        }
+      }
+      width={200}
+    />
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+      style={
+        Object {
+          "marginTop": 25,
+        }
+      }
+    >
+      Your risk level
+      : 
+      <span
+        style={
+          Object {
+            "color": "#4caf50",
+          }
+        }
+      >
+        standard
+      </span>
+    </p>
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+      style={
+        Object {
+          "marginTop": 15,
+        }
+      }
+    >
+      At this time, no exposures have been detected. However, everyone is at risk, and you should follow the guidance of public health authorities.
+    </p>
+  </div>
+</div>
+`;

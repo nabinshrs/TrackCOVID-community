@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkpoints component 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+>
+  <h5
+    className="MuiTypography-root MuiTypography-h5"
+    style={
+      Object {
+        "marginTop": 25,
+      }
+    }
+  >
+    Be safe and keep track.
+  </h5>
+  <img
+    src="virus-icon.png"
+    style={
+      Object {
+        "marginTop": 20,
+        "maxWidth": "80px",
+      }
+    }
+    width={200}
+  />
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+    style={
+      Object {
+        "marginTop": 25,
+      }
+    }
+  >
+    Thank you for participating in the effort to reduce the spread of COVID-19. You may scan a checkpoint using the button below.
+  </p>
+  <button
+    aria-label="add"
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    style={
+      Object {
+        "marginTop": 35,
+      }
+    }
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M3 5v4h2V5h4V3H5c-1.1 0-2 .9-2 2zm2 10H3v4c0 1.1.9 2 2 2h4v-2H5v-4zm14 4h-4v2h4c1.1 0 2-.9 2-2v-4h-2v4zm0-16h-4v2h4v4h2V5c0-1.1-.9-2-2-2z"
+        />
+      </svg>
+      Scan a Checkpoint
+    </span>
+  </button>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+    style={
+      Object {
+        "marginBottom": 25,
+        "marginTop": 35,
+      }
+    }
+  >
+    You may check your exposure status at any time through this web app. Learn more about TrackCOVID by visiting 
+    <a
+      className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+      href="https://trackcovid.net"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      target="_blank"
+    >
+      https://trackcovid.net
+    </a>
+    .
+  </p>
+</div>
+`;

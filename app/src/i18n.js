@@ -7,7 +7,7 @@ import es from './translations/es'
 
 const locizeProductId = process.env['REACT_APP_LOCIZE_PRODUCT_ID']
 
-const resources = locizeProductId ? undefined : { en, es }
+const resources = { en, es }
 
 const i18nSetup = locizeProductId
   ? i18n

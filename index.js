@@ -78,7 +78,7 @@ app.use('/api/', apiRouter)
 app.use('/public/', express.static('landing-public'))
 app.use('/static', express.static('app/build/static'))
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/checkpoints', { useNewUrlParser: true })
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true })
 const db = mongoose.connection
 
 app.use(passport.initialize())

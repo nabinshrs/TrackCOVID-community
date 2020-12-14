@@ -12,6 +12,7 @@ const sha256 = require('js-sha256').sha256
 const apiRouter = require('./routes/api')
 const adminApiRouter = require('./routes/admin-api')
 const generateCheckpoint = require('./public-checkpoint/generate-checkpoint')
+const generateMultiCheckpoint = require('./public-checkpoint/generate-multi-checkpoint')
 const User = require('./models/user')
 
 const checkpointKeyLength = Number(process.env['CHECKPOINT_KEY_LENGTH'])
@@ -99,6 +100,11 @@ app.get('/checkpoint', function (req, res) {
 app.get('/checkpoint.pdf', (req, res) => {
   const checkpointKey = sha256(String(Math.random())).substring(0, checkpointKeyLength)
   generateCheckpoint(checkpointKey, res)
+})
+
+app.get('/qr-sheet', (req, res) => {
+  const checkpointKey = sha256(String(Math.random())).substring(0, checkpointKeyLength)
+  generateMultiCheckpoint(checkpointKey, res)
 })
 
 db.on('error', console.error.bind(console, 'connection error:'))

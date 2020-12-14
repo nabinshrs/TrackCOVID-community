@@ -168,7 +168,7 @@ class App extends React.Component {
                 {"Neighbor Say Neighbor"}
               </Typography>
               {languages.length > 1 && (
-                <Container style={{ textAlign: 'right' }}>
+                // <Container style={{ textAlign: 'right' }}>
                   <FormControl>
                     <Select
                       labelId='language-select-label'
@@ -184,7 +184,7 @@ class App extends React.Component {
                       }) }
                     </Select>
                   </FormControl>
-                </Container>
+                // </Container>
               )}
             </Toolbar>
           </Container>

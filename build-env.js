@@ -13,7 +13,8 @@ const appVars = [
   { originalName: 'CONTACT_WINDOW_HOURS_BEFORE', newName: 'REACT_APP_CONTACT_WINDOW_HOURS_BEFORE' },
   { originalName: 'CONTACT_WINDOW_HOURS_AFTER', newName: 'REACT_APP_CONTACT_WINDOW_HOURS_AFTER' },
   { originalName: 'CHECKPOINT_KEY_LENGTH', newName: 'REACT_APP_CHECKPOINT_KEY_LENGTH' },
-  { originalName: 'LOCIZE_PRODUCT_ID', newName: 'REACT_APP_LOCIZE_PRODUCT_ID', optional: true }
+  { originalName: 'LOCIZE_PRODUCT_ID', newName: 'REACT_APP_LOCIZE_PRODUCT_ID', optional: true },
+  { originalName: 'APP_DOMAIN', newName: 'REACT_APP_WEB_APP_DOMAIN' },
 ]
 
 const adminVars = [

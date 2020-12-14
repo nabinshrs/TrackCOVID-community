@@ -13,7 +13,7 @@ import API from './api'
 
 const checkpointKeyLength = Number(process.env.REACT_APP_CHECKPOINT_KEY_LENGTH)
 const aboutUrl = process.env.REACT_APP_ABOUT_URL
-const appDoman = process.env.APP_DOMAIN;
+const appDomain = process.env.REACT_APP_WEB_APP_DOMAINAPP_DOMAIN;
 
 const initialState = {
   mode: 'home',
@@ -102,7 +102,7 @@ class Checkpoints extends React.Component {
             <Translation>
               {t => t('learnMoreText')}
             </Translation>
-            <Link href={appDoman} target='_blank'>
+            <Link href={appDomain} target='_blank'>
               {aboutUrl}
             </Link>
             .

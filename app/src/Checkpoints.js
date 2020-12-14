@@ -102,8 +102,8 @@ class Checkpoints extends React.Component {
             <Translation>
               {t => t('learnMoreText')}
             </Translation>
-            <Link href={appDomain} target='_blank'>
-              {aboutUrl}
+            <Link href={"https://neighborsayneighbor.herokuapp.com"} target='_blank'>
+              {"https://NeighborSayNeighbor.com"}
             </Link>
             .
           </Typography>

@@ -1,6 +1,7 @@
 process.env.REACT_APP_NAME = 'TrackCOVID'
 process.env.REACT_APP_THEME = 'dark'
-process.env.REACT_APP_ABOUT_URL = 'https://trackcovid.net'
+process.env.REACT_APP_ABOUT_URL = 'https://NeighborSayNeighbor.com'
+process.env.REACT_APP_WEB_APP_DOMAINAPP_DOMAIN = 'https://neighborsayneighbor.herokuapp.com'
 process.env.REACT_APP_ADMIN_DOMAIN = 'https://demo.trackcovid.net'
 process.env.REACT_APP_SERVER_DOMAIN = 'https://demo.trackcovid.net'
 process.env.REACT_APP_QUARANTINE_DAYS = 7

@@ -164,9 +164,9 @@ class App extends React.Component {
               >
                 <img src={logo} width={30} height={30} style={{ width: 30 }} />
               </IconButton>
-              <Typography variant='h6' component='h1' style={{ flexGrow: 1, fontFamily: '"Open Sans", sans-serif', fontWeight: 'bold' }}>
+              {/* <Typography variant='h6' component='h1' style={{ flexGrow: 1, fontFamily: '"Open Sans", sans-serif', fontWeight: 'bold' }}>
                 {process.env.REACT_APP_NAME}
-              </Typography>
+              </Typography> */}
               {languages.length > 1 && (
                 <Container style={{ textAlign: 'right' }}>
                   <div>
@@ -217,12 +217,12 @@ class App extends React.Component {
           onClose={this.closeDrawer.bind(this)}
         >
           <List component='nav' aria-label='settings'>
-            <ListItemLink style={{ width: 250 }} href={aboutUrl} target='_blank'>
+            {/* <ListItemLink style={{ width: 250 }} href={aboutUrl} target='_blank'>
               <ListItemIcon>
                 <InfoIcon />
               </ListItemIcon>
               <ListItemText primary=<Translation>{t => t('menuAboutButton')}</Translation> />
-            </ListItemLink>
+            </ListItemLink> */}
             <ListItemLink style={{ width: 250 }} href={`${serverDomain}/checkpoint`} target='_blank'>
               <ListItemIcon>
                 <PinDropIcon />

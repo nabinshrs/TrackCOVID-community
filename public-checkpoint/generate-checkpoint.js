@@ -12,9 +12,9 @@ module.exports = function (checkpointKey, res) {
     const checkpointLink = `${appDomain}?checkpoint=${checkpointKey}`
     const checkpointQrCodeUrl = await QRCode.toDataURL(checkpointLink, { margin: 0, scale: 20 })
     const checkpointQrCodeImg = Buffer.from(checkpointQrCodeUrl.replace('data:image/png;base64,', ''), 'base64')
-    const websiteLink = process.env.ABOUT_URL
-    const websiteQRCodeUrl = await QRCode.toDataURL(websiteLink, { margin: 0, scale: 4 })
-    const websiteQrCodeImg = Buffer.from(websiteQRCodeUrl.replace('data:image/png;base64,', ''), 'base64')
+    // const websiteLink = process.env.ABOUT_URL
+    // const websiteQRCodeUrl = await QRCode.toDataURL(websiteLink, { margin: 0, scale: 4 })
+    // const websiteQrCodeImg = Buffer.from(websiteQRCodeUrl.replace('data:image/png;base64,', ''), 'base64')
     doc.image('./public-checkpoint/track-covid.png', 0, 0, { width: 600 })
     doc.image(checkpointQrCodeImg, 55, 325, { width: 300 })
     // doc.image(websiteQrCodeImg, 378, 668.5, { width: 37 })

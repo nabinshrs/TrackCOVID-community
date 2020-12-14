@@ -169,23 +169,21 @@ class App extends React.Component {
               </Typography>
               {languages.length > 1 && (
                 <Container style={{ textAlign: 'right' }}>
-                  <div>
-                    <FormControl>
-                      <Select
-                        labelId='language-select-label'
-                        id='language-select'
-                        value={currentLanguage}
-                        style={{ color: '#fff' }}
-                        onChange={this.onSelectLanguage.bind(this)}
-                      >
-                        { languages.map((language, index) => {
-                          return (
-                            <MenuItem key={index} value={language.code}>{language.name}</MenuItem>
-                          )
-                        }) }
-                      </Select>
-                    </FormControl>
-                  </div>
+                  <FormControl>
+                    <Select
+                      labelId='language-select-label'
+                      id='language-select'
+                      value={currentLanguage}
+                      style={{ color: '#fff' }}
+                      onChange={this.onSelectLanguage.bind(this)}
+                    >
+                      { languages.map((language, index) => {
+                        return (
+                          <MenuItem key={index} value={language.code}>{language.name}</MenuItem>
+                        )
+                      }) }
+                    </Select>
+                  </FormControl>
                 </Container>
               )}
             </Toolbar>

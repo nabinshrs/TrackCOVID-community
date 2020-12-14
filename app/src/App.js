@@ -164,9 +164,9 @@ class App extends React.Component {
               >
                 <img src={logo} width={30} height={30} style={{ width: 30 }} />
               </IconButton>
-              {/* <Typography variant='h6' component='h1' style={{ flexGrow: 1, fontFamily: '"Open Sans", sans-serif', fontWeight: 'bold' }}>
-                {process.env.REACT_APP_NAME}
-              </Typography> */}
+              <Typography variant='h6' component='h1' style={{ flexGrow: 1, fontFamily: '"Open Sans", sans-serif', fontWeight: 'bold' }}>
+                {"Neighbor Say Neighbor"}
+              </Typography>
               {languages.length > 1 && (
                 <Container style={{ textAlign: 'right' }}>
                   <div>
